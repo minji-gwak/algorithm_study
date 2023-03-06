@@ -1,4 +1,4 @@
-let input = Number(require('fs').readFileSync('/dev/stdin').toString());
+const input = Number(require('fs').readFileSync('/dev/stdin').toString());
 
 let num = input;
 let sum;
