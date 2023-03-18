@@ -1,20 +1,49 @@
 const fs = require('fs');
-const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
+const filePath = process.platform === 'linux' ? '/dev/stdin' : __dirname + '/input.txt';
+const input = fs.readFileSync(filePath).toString().trim().split('\n');
 
-input[0] = input[0].split(' ').map(Number);
-input[1] = input[1].split(' ').map(Number);
-const cardNum = input[0][0];
-const sumMax = input[0][1];
-let answer = 0;
+function solution(input) {
+  const roomArr = new Array();
 
-for (let i = 0; i < cardNum; i++) {
-  for (let j = i + 1; j < cardNum; j++) {
-    for (let k = j + 1; k < cardNum; k++) {
-      let cardSum = input[1][i] + input[1][j] + input[1][k];
-      if (sumMax >= cardSum && answer < cardSum) {
-        answer = cardSum;
-      }
+  for (let i = 0; i < input.length; i++) {
+    let [height, width, nth] = input[i].split(' ').map(Number);
+    let roomNum = 1;
+
+    while (nth > height) {
+      roomNum++;
+      nth = nth - height;
+    }
+
+    if (roomNum < 10) {
+      roomArr.push(`${nth}0${roomNum}`);
+    } else {
+      roomArr.push(`${nth}${roomNum}`);
     }
   }
+  console.log(roomArr.join('\n'));
 }
-console.log(answer);
+
+solution(input.splice(1));
+
+// 틀렸다고 나오는데 왜인지 잘 모르겠는 답안
+// const fs = require('fs');
+// const filePath = process.platform === 'linux' ? '/dev/stdin' : __dirname + '/input.txt';
+// const input = fs.readFileSync(filePath).toString().trim().split('\n');
+
+// function solution(input) {
+//   input.forEach((info) => {
+//     let [height, width, nth] = info.split(' ').map(Number);
+//     let [floorNum, roomNum] = [
+//       nth % height !== 0 ? nth % height : height,
+//       nth % height !== 0 ? Math.ceil(nth / height) : Math.floor(nth / height),
+//     ];
+
+//     if (nth / height < 10) {
+//       roomNum = console.log(`${floorNum}0${roomNum}`);
+//     } else {
+//       console.log(`${floorNum}${roomNum}`);
+//     }
+//   });
+// }
+
+// solution(input.splice(1));
