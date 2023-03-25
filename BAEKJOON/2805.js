@@ -3,8 +3,7 @@ const filePath = process.platform === 'linux' ? '/dev/stdin' : __dirname + '/inp
 const input = fs.readFileSync(filePath).toString().trim().split('\n');
 const [N, lenData] = [input[0].split(' ').map(Number), input[1].split(' ').map(Number)];
 
-function solution([treesNum, bringLength], treesLengthList) {
-  treesLengthList.sort((a, b) => a - b); // 이분 탐색을 위해 오름차순 정렬
+function solution(bringLength, treesLengthList) {
   let [searchStart, searchEnd] = [0, Math.max(...treesLengthList)]; // 찾는 것이 자르는 길이이므로 범위는 (0 ~ 나무 길이의 최댓값)
   let maxCutLength = Number.MIN_SAFE_INTEGER;
 
@@ -22,4 +21,4 @@ function solution([treesNum, bringLength], treesLengthList) {
   console.log(maxCutLength);
 }
 
-solution(N, lenData);
+solution(N[1], lenData);
