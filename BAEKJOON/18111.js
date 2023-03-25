@@ -38,4 +38,4 @@ function solution(haveBlocksCount, heightList) {
   console.log(minTime, flatMaxHeight);
 }
 
-solution(Number(L.split(' ')[2]), datas.map((x) => x.split(' ').map(Number)).flat());
+solution(Number(L.split(' ')[2]), [].concat(...datas.map((x) => x.split(' ').map(Number))));
