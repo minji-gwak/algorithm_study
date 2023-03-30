@@ -20,10 +20,10 @@
     </tr>
     <tr>
         <td align='center'>
-            [![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=mini0006)](https://solved.ac/mini0006)
+            <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=mini0006">
         </td>
         <td align='center'>
-            [![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=sangpok)](https://solved.ac/sangpok)
+            <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=sangpok">            
         </td>
     </tr>
 </table>
