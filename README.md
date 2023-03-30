@@ -18,9 +18,9 @@
 ## 🗓️ 기간별 풀이 상황
 |기간|문제|총 문제 수|상태|
 |:---:|:---:|:---:|:---:|
-|2023.03.05 ~ 2023.03.06|<div>[solved.ac](https://solved.ac/class) Class 1 <img src="https://static.solved.ac/class/c1s.svg" width="30px" height="30px"></div>|36|![status](https://img.shields.io/badge/-완료-0885CC)|
-|2023.03.07 ~ 2023.03.20|[solved.ac](https://solved.ac/class) Class 2 <img src="https://static.solved.ac/class/c2s.svg" width="30px" height="30px">|40|![status](https://img.shields.io/badge/-완료-0885CC)|
-|2023.03.26 ~ |[solved.ac](https://solved.ac/class) Class 3 <img src="https://static.solved.ac/class/c3s.svg" width="30px" height="30px">|48|![status](https://img.shields.io/badge/-진행-31AE0F)|
+|2023.03.05 ~ 2023.03.06|[solved.ac](https://solved.ac/class) Class 1|36|![status](https://img.shields.io/badge/-완료-0885CC)|
+|2023.03.07 ~ 2023.03.20|[solved.ac](https://solved.ac/class) Class 2|40|![status](https://img.shields.io/badge/-완료-0885CC)|
+|2023.03.26 ~ |[solved.ac](https://solved.ac/class) Class 3|48|![status](https://img.shields.io/badge/-진행-31AE0F)|
 
 <br/>
 <br/>
