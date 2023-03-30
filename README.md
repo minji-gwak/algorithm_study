@@ -20,7 +20,7 @@
     </tr>
     <tr>
         <td align='center'>
-            [![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=min0006)](https://solved.ac/mini0006)
+            [![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=mini0006)](https://solved.ac/mini0006)
         </td>
         <td align='center'>
             [![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=sangpok)](https://solved.ac/sangpok)
