@@ -1,7 +1,7 @@
 # 🫧 algorithm_study
 - ### 📁 [모든 풀이 해설](https://www.notion.so/00d4fae98a14456fb33aed27e073737b?v=064e34fc1a1c44679a1f16155668adb7&pvs=4)
 - 매일 알고리즘 문제를 풀고 날짜별로 [노션](https://www.notion.so/aba9f8bf2a7f41d0b9b86d4c1ea905a4?pvs=4)에 해설합니다.
-- 매 문제 풀이 후 스터디원과 서로 *리뷰* 를 남겨 *피드백* 합니다.
+- 매 문제 풀이 후 스터디원과 서로 리뷰를 남겨 **피드백** 합니다.
 - 부족한 유형이 있다면 학습 후 [알고리즘 유형 뽀개기](https://www.notion.so/fef01af379f74ff38dbcf6384ac54458?v=16fb17c560154032938b42236ca7406f&pvs=4)에 기록합니다.
 
 <br/>
@@ -15,12 +15,12 @@
 <br/>
 <br/>
 
-## 🗓️ 기간 별 풀이 상황
+## 🗓️ 기간별 풀이 상황
 |기간|문제|총 문제 수|상태|
 |:---:|:---:|:---:|:---:|
-|2023.03.05 ~ 2023.03.06|[solved.ac](https://solved.ac/class) Class 1|36|![status](https://img.shields.io/badge/-완료-0885CC)|
-|2023.03.07 ~ 2023.03.20|[solved.ac](https://solved.ac/class) Class 2|40|![status](https://img.shields.io/badge/-완료-0885CC)|
-|2023.03.26 ~ |[solved.ac](https://solved.ac/class) Class 3|48|![status](https://img.shields.io/badge/-진행-31AE0F)|
+|2023.03.05 ~ 2023.03.06|<div>[solved.ac](https://solved.ac/class) Class 1 <img src="https://static.solved.ac/class/c1s.svg" width="30px" height="30px"></div>|36|![status](https://img.shields.io/badge/-완료-0885CC)|
+|2023.03.07 ~ 2023.03.20|[solved.ac](https://solved.ac/class) Class 2 <img src="https://static.solved.ac/class/c2s.svg" width="30px" height="30px">|40|![status](https://img.shields.io/badge/-완료-0885CC)|
+|2023.03.26 ~ |[solved.ac](https://solved.ac/class) Class 3 <img src="https://static.solved.ac/class/c3s.svg" width="30px" height="30px">|48|![status](https://img.shields.io/badge/-진행-31AE0F)|
 
 <br/>
 <br/>
