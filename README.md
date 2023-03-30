@@ -7,20 +7,20 @@
 <br/>
 <br/>
 
+## 🧑‍💻 스터디원
+|[곽민지](https://github.com/minji-gwak)|[김주현](https://github.com/sangpok)|
+|:---:|:---:|
+|[![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=mini0006)](https://solved.ac/mini0006)|[![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=sangpok)](https://solved.ac/sangpok)|
+
+<br/>
+<br/>
+
 ## 🗓️ 기간 별 풀이 상황
 |기간|문제|총 문제 수|상태|
 |:---:|:---:|:---:|:---:|
 |2023.03.05 ~ 2023.03.06|[solved.ac](https://solved.ac/class) Class 1|36|![status](https://img.shields.io/badge/-완료-0885CC)|
 |2023.03.07 ~ 2023.03.20|[solved.ac](https://solved.ac/class) Class 2|40|![status](https://img.shields.io/badge/-완료-0885CC)|
 |2023.03.26 ~ |[solved.ac](https://solved.ac/class) Class 3|48|![status](https://img.shields.io/badge/-진행-31AE0F)|
-
-<br/>
-<br/>
-
-## 🧑‍💻 스터디원
-|[곽민지](https://github.com/minji-gwak)|[김주현](https://github.com/sangpok)|
-|:---:|:---:|
-|[![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=mini0006)](https://solved.ac/mini0006)|[![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=sangpok)](https://solved.ac/sangpok)|
 
 <br/>
 <br/>
