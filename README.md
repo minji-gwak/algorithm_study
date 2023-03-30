@@ -28,9 +28,9 @@
 ## 📚 알고리즘 학습 정리
 - 구현
 - 정렬
-- 이진 탐색
-- 완전 탐색 (브루트포스)
-- 그리디
+- 이진 탐색 (Binary Search)
+- 완전 탐색 (Brute-Force)
+- 그리디 (Greedy)
 - DFS / BFS
-- 트리
+- [트리(Tree)](https://www.notion.so/Tree-270efa4c5d604946ac81804befb2718e?pvs=4)
 - 다이나믹 프로그래밍 (DP)
