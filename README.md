@@ -20,7 +20,7 @@
 ## 🧑‍💻 스터디원
 |[곽민지](https://github.com/minji-gwak)|[김주현](https://github.com/sangpok)|
 |:---:|:---:|
-|[![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=mini0006)](https://solved.ac/mini0006)|[![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=sangpok)](https://solved.ac/sangpok)|
+|[![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=mini0006)](https://solved.ac/mini0006)|[![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=sangpok)](https://solved.ac/sangpok)|
 
 <br/>
 <br/>
