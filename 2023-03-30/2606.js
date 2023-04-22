@@ -2,24 +2,35 @@ const fs = require('fs');
 const filePath = process.platform === 'linux' ? '/dev/stdin' : __dirname + '/input.txt';
 const [L, N, ...datas] = fs.readFileSync(filePath).toString().trim().split('\n');
 
-function solution(computerCount, list) {
-  const linkPairList = Array(computerCount).fill(new Set());
-  const getVirus = new Set();
+function solution(nodeNum, edgeNum, pairList) {
+  const computerGraph = [...Array(nodeNum + 1)].map(() => []);
+  const visited = [...Array(nodeNum + 1)].fill(0);
+  let answer = 0;
 
-  list.forEach((computerNum) => {
-    console.log(linkPairList[computerNum[1] - 1], computerNum[1]);
-    if (!linkPairList[computerNum[0] - 1].has(computerNum[1])) {
-      linkPairList[computerNum[0] - 1].add(computerNum[1]);
-    } else if (!linkPairList[computerNum[1] - 1].has(computerNum[0])) {
-      linkPairList[computerNum[1] - 1].add(computerNum[0]);
+  for (let i = 0; i < edgeNum; i++) {
+    let start = Number(pairList[i][0]);
+    let end = Number(pairList[i][1]);
+    computerGraph[start].push(end);
+    computerGraph[end].push(start);
+  }
+
+  visited[1] = 1;
+  const dfs = (start) => {
+    for (let end of computerGraph[start]) {
+      if (!visited[end]) {
+        visited[end] = 1;
+        answer++;
+        dfs(end);
+      }
     }
-  });
-  console.log(linkPairList);
+  };
+  dfs(1);
 
-  console.log(getVirus.size - 1);
+  console.log(answer);
 }
 
 solution(
   Number(L),
+  Number(N),
   datas.map((x) => x.split(' ').map(Number))
 );
