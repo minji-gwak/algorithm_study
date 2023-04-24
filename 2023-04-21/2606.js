@@ -3,24 +3,23 @@ const filePath = process.platform === 'linux' ? '/dev/stdin' : __dirname + '/inp
 const [L, N, ...datas] = fs.readFileSync(filePath).toString().trim().split('\n');
 
 function solution(nodeNum, edgeNum, pairList) {
-  const computerGraph = [...Array(nodeNum + 1)].map(() => []);
-  const visited = [...Array(nodeNum + 1)].fill(0);
+  const graph = [...Array(nodeNum + 1)].map(() => []);
+  const visited = Array(nodeNum + 1).fill(false);
   let answer = 0;
 
   for (let i = 0; i < edgeNum; i++) {
-    let start = Number(pairList[i][0]);
-    let end = Number(pairList[i][1]);
-    computerGraph[start].push(end);
-    computerGraph[end].push(start);
+    let [from, to] = pairList[i].map(Number);
+    graph[from].push(to);
+    graph[to].push(from);
   }
 
-  visited[1] = 1;
-  const dfs = (start) => {
-    for (let end of computerGraph[start]) {
-      if (!visited[end]) {
-        visited[end] = 1;
+  visited[1] = true;
+  const dfs = (current) => {
+    for (let next of graph[current]) {
+      if (!visited[next]) {
+        visited[next] = true;
         answer++;
-        dfs(end);
+        dfs(next);
       }
     }
   };
