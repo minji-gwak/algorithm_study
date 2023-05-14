@@ -13,9 +13,7 @@ function solution(sum) {
     if (seqSum > sum) {
       end = mid - 1;
     } else {
-      if (maxCnt <= mid) {
-        maxCnt = mid;
-      }
+      maxCnt = mid;
       start = mid + 1;
     }
   }
