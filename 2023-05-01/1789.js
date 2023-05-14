@@ -8,7 +8,7 @@ function solution(sum) {
   let maxCnt = Number.MIN_SAFE_INTEGER;
 
   while (start <= end) {
-    let mid = ~~((start + end) / 2);
+    let mid = Math.floor((start + end) / 2);
     let seqSum = (mid * (1 + mid)) / 2;
     if (seqSum > sum) {
       end = mid - 1;
