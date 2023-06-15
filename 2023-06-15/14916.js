@@ -9,12 +9,12 @@ const solution = (change) => {
     // 거스름돈이 1 또는 3 인 경우에만 거슬러 줄 수 없다.
     answer = -1;
   } else {
-    let fiveNum = Math.floor(change / 5);
-    if ((change - fiveNum * 5) % 2 !== 0 && fiveNum !== 0) {
-      fiveNum--;
+    let fiveCnt = Math.floor(change / 5);
+    if ((change - fiveCnt * 5) % 2 !== 0 && fiveCnt !== 0) {
+      fiveCnt--;
     }
-    let twoNum = (change - fiveNum * 5) / 2;
-    answer = fiveNum + twoNum;
+    let twoCnt = (change - fiveCnt * 5) / 2;
+    answer = fiveCnt + twoCnt;
   }
 
   console.log(answer);
