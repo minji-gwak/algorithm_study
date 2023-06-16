@@ -6,12 +6,13 @@ const solution = (N, tipList) => {
   tipList.sort((a, b) => b - a);
   let sum = 0;
 
-  for (let i = 0; i < N; i++) {
-    let tips = tipList[i] - i;
-    if (tips > 0) {
-      sum += tips;
+  tipList.forEach((tip, seq) => {
+    let realTip = tip - seq;
+    if (realTip > 0) {
+      sum += realTip;
     }
-  }
+  });
+
   console.log(sum);
 };
 
