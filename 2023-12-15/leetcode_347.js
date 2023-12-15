@@ -3,11 +3,7 @@ const topKFrequent = (nums, k) => {
   const answer = [];
 
   nums.forEach((n) => {
-    if (numMap.has(n)) {
-      numMap.set(n, numMap.get(n) + 1);
-    } else {
-      numMap.set(n, 0);
-    }
+    numMap.set(n, numMap.has(n) ? numMap.get(n) + 1 : 0);
   });
   const sortedArr = Array.from(numMap).sort((a, b) => b[1] - a[1]);
   for (let i = 0; i < k; i++) {
