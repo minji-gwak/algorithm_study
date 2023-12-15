@@ -1,4 +1,4 @@
-let numJewelsInStones = (jewels, stones) => {
+const numJewelsInStones = (jewels, stones) => {
   const jewelSet = new Set(jewels.split(''));
   let count = 0;
 
