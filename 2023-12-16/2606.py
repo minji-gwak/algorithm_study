@@ -10,11 +10,11 @@ for _ in range(connectNum):
 
 
 #  재귀를 활용한 dfs 구현
-def dfs(curr, cnt):
+def dfs(curr, cnt = 0):
     for next in graph[curr]:
         if not visited[next]:
             visited[next] = True
             cnt = dfs(next, cnt + 1)
     return cnt
 
-print(dfs(1, 0));
+print(dfs(1));
