@@ -10,9 +10,7 @@ const dfs = (N, cnt = 0) => {
 };
 
 const solution = (T, nList) => {
-  nList.forEach((n) => {
-    console.log(dfs(n));
-  });
+  console.log(nList.map((n) => dfs(n)).join('\n'));
 };
 
 solution(L, datas);
