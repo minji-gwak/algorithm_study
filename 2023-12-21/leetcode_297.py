@@ -20,17 +20,17 @@ class Codec:
     def deserialize(self, data : str) -> TreeNode:
         dataQ = deque(data.split())
 
-        def dfs(list):
-            if not len(list):
+        def dfs(q):
+            if not len(q):
                 return
             
-            val = list.popleft()
+            val = q.popleft()
             if val == 'null':
                 return None
             
             node = TreeNode(val)
-            node.left = dfs(list)
-            node.right = dfs(list)
+            node.left = dfs(q)
+            node.right = dfs(q)
             return node
         
         return dfs(dataQ)
