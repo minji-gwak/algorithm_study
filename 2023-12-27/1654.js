@@ -17,7 +17,7 @@ const solution = ([k, n], lanList) => {
       high = mid - 1;
     }
   }
-  console.log(high);
+  console.log(maxLen);
 };
 
 solution(L.split(' ').map(Number), datas.map(Number));

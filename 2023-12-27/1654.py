@@ -21,4 +21,4 @@ while low <= high:
     else:
         high = mid - 1
 
-print(high)
+print(maxLen)
