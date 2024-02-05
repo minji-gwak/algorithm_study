@@ -1,7 +1,9 @@
+from collections import Counter
+
 class Solution(object):
     def removeDuplicateLetters(self, s):
         stack = []
-        charCounter = collections.Counter(s)
+        charCounter = Counter(s)
 
         for char in s:
             charCounter[char] -= 1
